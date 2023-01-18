@@ -1,0 +1,41 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-185c30a2e08-76dab76152e183e7": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "cardb",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "cardb",
+				"url": "jdbc:mysql://localhost:3306/cardb",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/mysql-8.0.29-macos12-arm64",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2"
+				},
+				"auth-model": "native",
+				"handlers": {},
+				"bootstrap": {
+					"defaultCatalog": "cardb"
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
